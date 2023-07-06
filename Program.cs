@@ -7,7 +7,7 @@ using System.IO;
 namespace AvgGrade
 {
     class Program
-    {
+    {  
         static void Main(string[] args)
         {
             List<Student> students = new List<Student>();
@@ -28,7 +28,10 @@ namespace AvgGrade
             { 
             foreach (Student st in students)
             {
-                double avg = (st.BelGrade + st.MathGrade + st.InfoGrade)/3.0;
+
+                              
+
+                    double avg =          (st.BelGrade + st.MathGrade + st.InfoGrade)/3.0;
                 Console.WriteLine($"{st.Name} - {avg:f2}");
             }
         }
